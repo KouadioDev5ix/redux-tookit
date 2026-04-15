@@ -1,0 +1,34 @@
+{
+  "configuration": [
+    {
+      "nomArticle": "Cahier 200 pages",
+      "categorieArticle": "Fournitures",
+      "identifant": 12345,
+      "fournisseur": "Papeterie Centrale"
+    },
+    {
+      "nomArticle": "Stylo Bleu",
+      "categorieArticle": "Papeterie",
+      "identifant": 67890,
+      "fournisseur": "BIC Afrique"
+    },
+    {
+      "nomArticle": "Sac Scolaire",
+      "categorieArticle": "Accessoires",
+      "identifant": 54321,
+      "fournisseur": "SchoolBag Pro"
+    },
+    {
+      "nomArticle": "Livre Maths",
+      "categorieArticle": "Manuels",
+      "identifant": 98765,
+      "fournisseur": "Edition Savoir"
+    },
+    {
+      "nomArticle": "Crayon HB",
+      "categorieArticle": "Fournitures",
+      "identifant": 11223,
+      "fournisseur": "Graphite Plus"
+    }
+  ]
+}
