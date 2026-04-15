@@ -2,7 +2,7 @@ import {
   decrementerCoumpteur,
   incrementerCompteur,
   reinitialiserCompteur,
-} from "./features/counterSlices/counterSlice";
+} from "./redux/counterSlices/counterSlice";
 import { useAppDispatch, useAppSelector } from "./hooks/hooks";
 
 function App() {
