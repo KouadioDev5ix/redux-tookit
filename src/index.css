@@ -10,3 +10,15 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.label {
+  @apply block text-xs font-medium text-gray-700 mb-0;
+}
+
+.input {
+  @apply w-full border h-8 border-orange-200 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm;
+}
+
+.error {
+  @apply text-red-500 text-xs mt-1;
+}
