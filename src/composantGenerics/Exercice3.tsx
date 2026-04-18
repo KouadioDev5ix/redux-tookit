@@ -1,7 +1,5 @@
 //**Enonnce */
 
-import { selectListDesConfiguration } from "@/store/slices/Configuration/configurationSlice";
-
 /**
  * 
 Select générique
