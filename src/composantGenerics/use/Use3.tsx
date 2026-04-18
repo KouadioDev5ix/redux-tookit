@@ -16,6 +16,8 @@ export default function RenderExercice3() {
   return (
     <div>
       <CustumSelect
+        SelectBoxclassName=""
+        optionsClassName=""
         options={pays}
         getKey={(pays) => pays.code}
         labelKey="label"
