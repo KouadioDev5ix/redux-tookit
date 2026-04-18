@@ -16,12 +16,12 @@ const produits: Product[] = [
   },
 ];
 
-export default function RenderExercice2() {
+export default function RenderExercice2( ) {
   return (
     <div>
       <List
         renderItem={(item) => (
-          <ul>
+          <ul className="border border-gray-100 rounded-xl">
             <li>{item.name}</li>
             <li>{item.price}</li>
             <li>{item.quantity}</li>
