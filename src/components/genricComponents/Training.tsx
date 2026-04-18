@@ -6,3 +6,11 @@ export interface Column<dataType> {
   renderCell: (value: string | number | boolean, row: dataType) => void;
 }
 
+export interface Actions<actionType> {
+  label: string;
+  icon: React.ReactNode;
+  variant: "destructive " | "default";
+  onclick: (row: actionType) => void;
+}
+
+
