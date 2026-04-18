@@ -13,4 +13,18 @@ export interface Actions<actionType> {
   onclick: (row: actionType) => void;
 }
 
-
+export interface CustomTble<tableType> {
+  data: tableType[];
+  colums: Column<tableType>[];
+  loading?: boolean;
+  tableClassName?: string;
+  rowClassName?: string;
+  emptyMessage?: string;
+  actions: Actions<tableType>[];
+  pagination?: {
+    currentPage: number;
+    totalPage: number;
+    onPageChange: (page: number) => void;
+  };
+  getRowKey: (row: tableType) => number | string;
+}
