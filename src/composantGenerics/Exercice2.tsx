@@ -14,7 +14,20 @@ interface ListProps<T> {
   getKey: (item: T) => string | number;
 }
 
-
-export default function List<T>({emptyMessage , getKey }:ListProps<T>){
-
+export default function List<T>({
+  emptyMessage,
+  getKey,
+  items,
+  renderItem,
+}: ListProps<T>) {
+  if (items.length === 0) return <p>{emptyMessage} </p>;
+  return (
+    <section>
+      <ul>
+        {items.map((item: T, index) => (
+          <li key={getKey ? getKey(item) : index}>{renderItem(item)}</li>
+        ))}
+      </ul>
+    </section>
+  );
 }
