@@ -1,5 +1,7 @@
 //**Enonnce */
 
+import { twMerge } from "tailwind-merge";
+
 /**
  * 
 Select générique
@@ -9,6 +11,8 @@ valueKey: keyof T; labelKey: keyof T
  */
 
 interface CustumSelectProps<T> {
+  SelectBoxclassName?: string;
+  optionsClassName?: string;
   options: T[];
   labelKey: keyof T;
   valueKey: keyof T;
@@ -18,6 +22,8 @@ interface CustumSelectProps<T> {
 }
 
 export default function CustumSelect<T>({
+  SelectBoxclassName,
+  optionsClassName,
   options,
   getKey,
   labelKey,
@@ -43,13 +49,20 @@ export default function CustumSelect<T>({
 
   return (
     <section>
-      <select name="" id="" onChange={handleChange} defaultValue={""}>
+      <select
+        name=""
+        id=""
+        onChange={handleChange}
+        defaultValue={""}
+        className={twMerge("w-full rounded-md", SelectBoxclassName)}
+      >
         <option value="">{placeholder}</option>
 
         {options.map((option, index) => (
           <option
             value={String(option[valueKey])}
             key={getKey ? getKey(option) : index}
+            className={twMerge("px-4 py-2 bg-gray-100 ", optionsClassName)}
           >
             {String(option[labelKey])}
           </option>
