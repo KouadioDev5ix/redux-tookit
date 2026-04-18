@@ -13,5 +13,11 @@ interface ListProps<T> {
 }
 
 export default function List<T>({ items, renderItem }: ListProps<T>) {
-  return <div></div>;
+  return (
+    <ul>
+      {items.map((item) => (
+        <li>{renderItem(item)}</li>
+      ))}
+    </ul>
+  );
 }
