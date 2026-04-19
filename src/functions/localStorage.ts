@@ -30,6 +30,7 @@ export const recupererTâcheLocalStorage = (): iTodo[] => {
   const donnee = localStorage.getItem("tâches");
   return donnee ? JSON.parse(donnee) : [];
 };
+
 /**
  *
  * @param T
