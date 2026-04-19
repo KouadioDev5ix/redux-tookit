@@ -32,12 +32,12 @@ export function CustomTable<T extends Record<string, any>>({
     >
       <table className="w-full text-sm">
         {/* HEADER */}
-        <thead className="bg-gray-200 text-gray-700">
+        <thead className="bg-blue-900 text-white">
           <tr>
             {columns.map((col) => (
               <th
                 key={String(col.key)}
-                className="px-4 py-3 text-left font-semibold"
+                className="px-8 py-3 text-left font-semibold"
               >
                 {col.header}
               </th>
