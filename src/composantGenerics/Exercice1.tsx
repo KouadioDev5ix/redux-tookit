@@ -5,7 +5,6 @@ interface BoxWrapperProps<T> {
 
 export default function BoxWrapper<T>({ label, value }: BoxWrapperProps<T>) {
   /**
-   *
    * @param value
    * @returns
    */
