@@ -14,7 +14,7 @@ const pays: Pays[] = [
 
 export default function RenderExercice3() {
   return (
-    <div>
+    <>
       <CustumSelect
         SelectBoxclassName=""
         optionsClassName=""
@@ -25,6 +25,6 @@ export default function RenderExercice3() {
         placeholder="Selectionner un pays"
         onChange={(pays) => console.log(pays)}
       />
-    </div>
+    </>
   );
 }
