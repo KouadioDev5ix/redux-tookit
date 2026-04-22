@@ -35,6 +35,7 @@ export default function CustumSelect<T>({
    *
    * @param e
    */
+
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = e.target.value;
 
@@ -62,7 +63,10 @@ export default function CustumSelect<T>({
           <option
             value={String(option[valueKey])}
             key={getKey ? getKey(option) : index}
-            className={twMerge("px-4 py-2 bg-gray-100 ", optionsClassName)}
+            className={twMerge(
+              "px-4 py-2 bg-gray-100 rounded-md",
+              optionsClassName,
+            )}
           >
             {String(option[labelKey])}
           </option>
